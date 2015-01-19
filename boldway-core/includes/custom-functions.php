@@ -43,7 +43,7 @@ endif;
  * @since     0.1
 */
 if(!function_exists('boldway_get_file_url')):
-	function boldway_get_file_url($url, $type='url') {
+	function boldway_get_file_url($file, $type='url') {
 		$output = '';
 		
 		if($type=='url'){

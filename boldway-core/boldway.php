@@ -91,6 +91,8 @@ if(!class_exists('boldway_init')):
 			if(!defined('BOLDWAY_THEME_SUPPORT_URL')){ define('BOLDWAY_THEME_SUPPORT_URL', ''); }
 			if(!defined('BOLDWAY_THEME_MORE_URL')){ define('BOLDWAY_THEME_MORE_URL', ''); }
 			if(!defined('BOLDWAY_THEME_NAME')){ define('BOLDWAY_THEME_NAME', ''); }
+			
+			include('configs/configs.php');
 		}
 		
 		
