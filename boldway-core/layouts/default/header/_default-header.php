@@ -6,7 +6,7 @@
 
 <div id="brand" class="site-section">
 	<div id="brand-inner" class="site-section-inner">
-    	<p>- Brand -</p>
+    	<?php boldway_get_file('layout-elements/site-logo.php'); ?>
     </div>
 </div>
 
