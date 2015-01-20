@@ -31,23 +31,25 @@ function boldway_config($id){
 		'logo' => '', // url (Option)
 		'header_phone' => '983 432 8437', // text (Option)
 		'header_email' => 'info@domain.com', // text (Option)
-		'header_login' => '#', // url (Option)
-		'header_register' => '#', // url (Option)
+		'header_login_register' => true, // true, false (Option)
+		'header_login_url' => '#', // url (Option)
+		'header_register_url' => '#', // url (Option)
+		'header_logout_url' => '#', // url (Option)
+		'header_account_url' => '#', // url (Option)
 		'header_ads' => '<a href=""><img src="http://placehold.it/468x60"></a>', // html (Option)
 		'header_text' => 'We are Boldway.', // text (Option)
 		'header_search' => true, // true, false (Option)
+		'header_social_icon_display' => true, // true, false (Option)
 		'header_social_icons' => array(
-			'facebook' => '#',
-			'twitter' => '#',
-			'linkedin' => '#',
-			'pinterest' => '#',
-			'google-plus' => '#',
-			'tumblr' => '#',
-			'instagram' => '#',
-			'vk' => '#',
-			'fllickr' => '#',
-			'youtube' => '#',
-			'vimeo' => '#',
+			array( 'type' => 'linkedin', 'url'=>'', 'title'=>'' ),
+			array( 'type' => 'vk', 'url'=>'', 'title'=>'' ),
+			array( 'type' => 'twitter', 'url'=>'', 'title'=>'' ),
+			array( 'type' => 'dribbble', 'url'=>'', 'title'=>'' ),
+			array( 'type' => 'facebook', 'url'=>'', 'title'=>'' ),
+			array( 'type' => 'github-alt', 'url'=>'', 'title'=>'' ),
+			array( 'type' => 'google-plus', 'url'=>'', 'title'=>'' ),
+			array( 'type' => 'pinterest', 'url'=>'', 'title'=>'' ),
+			array( 'type' => 'youtube-play', 'url'=>'', 'title'=>'' ),
 		),
 		
 		'header_text_color' => '#444', // color (Option)

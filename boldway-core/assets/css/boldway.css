@@ -206,6 +206,7 @@ a:hover{
 /*-------------------------------------------------------------------
 	8. Image
 -------------------------------------------------------------------*/
+img{ max-width:100%; width:auto; }
 
 
 
@@ -220,30 +221,35 @@ a:hover{
 /*-------------------------------------------------------------------
 	10. Columns
 -------------------------------------------------------------------*/
-.boldway-columns{
-	
-}
+.boldway-columns{ width:100%; margin-bottom:40px; *zoom: 1; }
+.boldway-columns:before,
+.boldway-columns:after { display: table; content: ""; line-height: 0; }
+.boldway-columns:after { clear: both; }
+.boldway-columns.nomargin { margin-bottom:0 !important; }
 .boldway-column{
-	
+	display: block;
+	width: 100%;
+	min-height: 30px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	margin-left: 2.857142857142857%;
+  	*margin-left: 2.8095238095238098%; 
 }
-.boldway-column-1{  }
-.boldway-column-2{  }
-.boldway-column-3{  }
-.boldway-column-4{  }
-.boldway-column-5{  }
-.boldway-column-6{  }
-.boldway-column-7{  }
-.boldway-column-8{  }
-.boldway-column-9{  }
-.boldway-column-10{  }
-.boldway-column-11{  }
-.boldway-column-12{  }
-.boldway-column-13{  }
-.boldway-column-14{  }
-.boldway-column-15{  }
-.boldway-column-16{  }
-.boldway-column-1-3{  }
-.boldway-column-1-5{  }
+.boldway-column:first-child{ margin-left:0; }
+.boldway-column-1{ width: 5.714285714285714%; *width: 5.666666666666667%; }
+.boldway-column-2{ width: 14.285714285714286%; *width: 14.238095238095239%; }
+.boldway-column-3{ width: 22.857142857142858%; *width: 22.80952380952381%; }
+.boldway-column-4{ width: 31.42857142857143%; *width: 31.380952380952383%; }
+.boldway-column-5{ width: 40%; *width: 39.95238095238095%; }
+.boldway-column-6{ width: 48.57142857142857%; *width: 48.52380952380952%; }
+.boldway-column-7{ width: 57.14285714285714%; *width: 57.09523809523809%; }
+.boldway-column-8{ width: 65.71428571428572%; *width: 65.66666666666667%; }
+.boldway-column-9{ width: 74.28571428571429%; *width: 74.23809523809524%; }
+.boldway-column-10{ width: 82.85714285714286%; *width: 82.80952380952381%; }
+.boldway-column-11{ width: 91.42857142857143%; *width: 91.38095238095238%; }
+.boldway-column-12{ width: 100%;  *width: 99.95238095238095%; }
 
 
 
