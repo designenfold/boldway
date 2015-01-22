@@ -1,3 +1,3 @@
 <div class="header-ads">
-	<?php echo boldway_config('header_ads'); ?>
+	<?php echo boldway_config('header', 'ads'); ?>
 </div>

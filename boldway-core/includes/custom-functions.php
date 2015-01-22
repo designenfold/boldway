@@ -92,7 +92,7 @@ if(!function_exists('boldway_layout')):
 		$default = array(			
 			'header' => true,
 			'subheader' => true,
-			'inner_content' => true,
+			'main' => true,
 			'upper_footer' => true,
 			'footer_widget' => true,
 			'footer' => true,
