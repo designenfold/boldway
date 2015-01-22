@@ -29,6 +29,8 @@ function boldway_config($section, $id){
 	
 	
 	$config['header'] = array(
+		'header'				=> true,
+		'topbar'				=> true,
 		'phone'					=> '983 432 8437', // text (Option)
 		'email'					=> 'info@domain.com', // text (Option)
 		'login_register'		=> true, // true, false (Option)
@@ -266,9 +268,4 @@ function boldway_config($section, $id){
 			return $config[$section][$id];
 		}
 	}
-}
-
-
-function boldway_general_config(){
-		
 }
