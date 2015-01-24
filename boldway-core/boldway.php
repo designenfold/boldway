@@ -236,7 +236,7 @@ if(!class_exists('boldway_init')):
 			----------------------------------*/
 			include('includes/custom-functions.php');
 			include('includes/scripts-loader.php');
-			include('includes/custom-css.php');
+			include('includes/dynamic-css-loader.php');
 			if(class_exists( 'TGM_Plugin_Activation')){ include('includes/recommended-plugin-list.php'); }
 			
 			

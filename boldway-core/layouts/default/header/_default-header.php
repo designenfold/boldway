@@ -1,8 +1,8 @@
 <?php if(boldway_config('header', 'topbar')): ?>
-<div id="topbar" class="site-section">
+<div id="topbar" class="site-section boldway-bg-dark">
 	<div id="topbar-inner" class="site-section-inner">
-    	<div class="boldway-columns">
-        	<div class="boldway-column-4 boldway-column"><?php boldway_get_file('layout-elements/secondary-menu.php'); ?></div>
+    	<div class="boldway-columns nomargin">
+        	<div class="boldway-column-4 boldway-column"><?php boldway_get_file('layout-elements/secondary-menu.php', array('class'=>"sns1")); ?></div>
             <div class="boldway-column-4 boldway-column"><?php boldway_get_file('layout-elements/header-text.php'); ?></div>
             <div class="boldway-column-4 boldway-column">
 				<?php boldway_get_file('layout-elements/header-email.php'); ?>
@@ -15,7 +15,7 @@
 
 <div id="brand" class="site-section">
 	<div id="brand-inner" class="site-section-inner">
-    	<div class="boldway-columns">
+    	<div class="boldway-columns nomargin">
         	<div class="boldway-column-3 boldway-column"><?php boldway_get_file('layout-elements/site-logo.php'); ?></div>
             <div class="boldway-column-5 boldway-column"><?php boldway_get_file('layout-elements/header-advertisement.php'); ?></div>
             <div class="boldway-column-4 boldway-column">

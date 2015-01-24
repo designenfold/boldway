@@ -9,9 +9,9 @@ body{ margin:0; padding:0; }
 
 /* header-layout-defaul
 ------------------------------*/
-.header-layout-default #topbar{ padding:10px 0; background:#333; color:#CCC; }
+.header-layout-default #topbar{ padding:10px 0; }
 .header-layout-default #brand{ padding:0; height:90px; }
-.header-layout-default #site-navigation{ border-bottom:solid 1px #CCC; border-top:solid 1px #ccc; padding:0; }
+.header-layout-default #site-navigation{ border-bottom:solid 1px; border-top:solid 1px; padding:0; }
 	
 	
 	
