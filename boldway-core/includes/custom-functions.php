@@ -140,3 +140,58 @@ if(!function_exists('boldway_get_content_file')):
 
 	}
 endif;
+
+
+
+/**
+ * Render The color code
+ *
+ * @return    string
+ *
+ * @access    public
+ * @since     0.1
+*/
+if(!function_exists('boldway_css_color')):
+	function boldway_css_color($name, $opicity = 1) {
+		if($opicity == 1){
+			return boldway_config('color', $name);
+		}else{
+			return 'rgba('.boldway_hex2rgb(boldway_config('color', $name)).','.$opicity.')';
+		}
+
+	}
+endif;
+
+
+
+
+/**
+ * Convert hex code to rgb color code
+ *
+ * @return    string or arrray
+ *
+ * @access    public
+ * @since     0.1
+*/
+if(!function_exists('boldway_hex2rgb')):
+	function boldway_hex2rgb($hex, $arry_format = false) {
+	   $hex = str_replace("#", "", $hex);
+	
+	   if(strlen($hex) == 3) {
+		  $r = hexdec(substr($hex,0,1).substr($hex,0,1));
+		  $g = hexdec(substr($hex,1,1).substr($hex,1,1));
+		  $b = hexdec(substr($hex,2,1).substr($hex,2,1));
+	   } else {
+		  $r = hexdec(substr($hex,0,2));
+		  $g = hexdec(substr($hex,2,2));
+		  $b = hexdec(substr($hex,4,2));
+	   }
+	   $rgb = array($r, $g, $b);
+	   
+	   if( $arry_format == true ){
+			return $rgb; // returns an array with the rgb values
+	   }else{
+			return implode(",", $rgb); // returns the rgb values separated by commas
+	   } 
+	}
+endif;

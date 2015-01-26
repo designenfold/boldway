@@ -13,8 +13,6 @@ function boldway_config($section, $id){
 	$config['general'] = array(
 		'site_layout'	=> 'default', // (Option)
 		'header_layout'	=> 'default', // (Option)
-		'accent_color'	=> '', // color (Option)
-		'accent2_color'	=> '', // color (Option)
 		'logo'			=> '', // url (Option)
 		'logo2x'		=> '', // url (Option)
 		'favicon'		=> '', // url (Option)
@@ -29,6 +27,35 @@ function boldway_config($section, $id){
 		'footer_code'	=> '', // html or javascript (Option)
 	);
 	
+	$config['color'] = array(
+		'accent'	=> '', // color (Option)
+		'accent2'	=> '', // color (Option)
+		'accent3'	=> '', // color (Option)
+		
+		'heading_d'			=> '', // color (Option)
+		'subheading_d'		=> '', // color (Option)
+		'text_d'			=> '', // color (Option)
+		'meta_d'			=> '', // color (Option)
+		'border_d'			=> '', // color (Option)
+		'border_bold_d'		=> '', // color (Option)
+		'border_light_d'	=> '', // color (Option)
+		'inner_bg_d'		=> '', // color (Option)
+		'inner_bg_bold_d'	=> '', // color (Option)
+		'inner_bg_light_d'	=> '', // color (Option)
+		'bg_d'				=> '', // color (Option)
+		
+		'heading_l'			=> '', // color (Option)
+		'subheading_l'		=> '', // color (Option)
+		'text_l'			=> '#939393', // color (Option)
+		'meta_l'			=> '', // color (Option)
+		'border_l'			=> '', // color (Option)
+		'border_bold_l'		=> '', // color (Option)
+		'border_light_l'	=> '', // color (Option)
+		'inner_bg_l'		=> '#525252', // color (Option)
+		'inner_bg_bold_l'	=> '', // color (Option)
+		'inner_bg_light_l'	=> '', // color (Option)
+		'bg_l'				=> '', // color (Option)
+	);
 	
 	$config['header'] = array(
 		'header'				=> true,
